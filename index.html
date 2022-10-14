@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tourist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <header>
+    <ul class="nav nav-pills"></ul>
+    <li class="nav-item">
+      <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+    </li>
+    <li class="nav-item"><a href="" class="nav-link"></a></li>
+  </header>
+  <body>
+    <h1>Buy Your Tickets For You and Your Family</h1>
+    <h2>Hiking Experience!</h2>
+    <link rel="stylesheet" href="./style.css">
+    <body>
+    <select name="categoryList" id="categoryList" onchange="loadItemList();">
+        <option value="">Select One</option>
+        <option value="adventures">Adventures</option>
+        <option value="museums">Museums</option>
+        <option value="wineTasting">Wine Tastings</option>
+        <option value="drinks">Drinks</option>
+        
+    </select>
+    <br>
+    <select name="itemList" id="itemList" size="8"></select>
 
-</head>
-<header>
-     <ul class="nav nav-pills"></ul>
-     <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-     <li class="nav-item"><a href="" class="nav-link"></a></li>
-</header>
-<body>
-    
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
