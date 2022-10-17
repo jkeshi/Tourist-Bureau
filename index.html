@@ -43,11 +43,14 @@
     </select>
     <p id="message"></p>
     <script src="./main.js"></script>
-     <form>
-      Full Name:<br>
-    <input type="text" name="fullName"><br>
-    Email:<br>
-    <input type="email" name="email"><br>
+  <form action="">
+          <label for="fullName">Full Name:</label>
+      <input required type="text" name="fullName" id="fullName" />
+      <div>
+
+      </div>
+   <label for="Email">Your Email:</label>
+      <input required type="text" name="email" id="email" />
   </form>
     <div class="container">
       <form action="">
@@ -93,8 +96,20 @@
       <option value="2029">2029</option>
   </select>
 </div>
+      <label for="numberOfTickets">Number of Tickets</label>
+      <input 
+        type="number"
+        name="numberOfTickets"
+        id="numberOfTickets"
+        min="1"
+        max="10"
+      />
+      <div>
+
+      </div>
    <input type="button" value="submit">
     <input type="button" value="reset">
+  
 
     <!-- <br>
     <select name="itemList" id="itemList" size="8"></select> --> 
